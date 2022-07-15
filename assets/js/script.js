@@ -1,3 +1,16 @@
+const currentTime = moment().format('Do, MMMM, h:mm')
+
+const title = (() => {
+  $('.current-time').append(`The Current Date and Time is ${currentTime}`)
+})();
+
+
+
+
+
+
+
+
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
@@ -22,6 +35,8 @@ $('#myModal').on('shown.bs.modal', function () {
       e.target.value = moment().format('MM-DD-YYYY');
     }
   })
+
+  
 
   
   

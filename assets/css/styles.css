@@ -1,41 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-
-.ae-nav{
-    background: black;
-    color: aqua;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+.ae-nav {
+  background: black;
+  color: aqua;
 }
 
-.ae-spacer {
-    height: 20px;
-    opacity: 0;
-    margin-bottom: 20px;
+#sidebar {
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 40%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  transition: all 0.5s ease;
 }
-
-.ae-btn {
-    color: antiquewhite;
-    background: springgreen;
-    border: solid;
-    border-radius: 25%;
-    margin-left: 40px;
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
 }
-
-.ae-margin-0 {
-    margin: 0;
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
 }
-
-body {
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-
-/* Toggle Styles */
 
 #viewport {
   padding-left: 250px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -45,31 +37,16 @@ body {
   margin-right: 0;
 }
 
-/* Sidebar Styles */
-
-#sidebar {
-  position: fixed;
-  left: 250px;
-  width: 250px;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #37474F;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.ae-btn {
+  color: antiquewhite;
+  background: springgreen;
+  border: solid;
+  border-radius: 25%;
+  margin-left: 40px;
 }
 
-#sidebar header {
-  background-color: #263238;
-  font-size: 20px;
-  line-height: 52px;
-  text-align: center;
-}
-
-#sidebar header a {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-}
+.ae-spacer {
+  height: 20px;
+  opacity: 0;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=styles.css.map */
